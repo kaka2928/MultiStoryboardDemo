@@ -36,18 +36,30 @@
                                     <rect key="frame" x="138" y="80" width="125" height="21"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bs9-XP-wLd">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="subViewButton"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="148" y="469" width="104" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="zEn-kP-LgF" kind="showDetail" id="ssO-qN-soG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="C9Q-mE-EVo"/>
                                 <exclude reference="5Lj-di-kcn"/>
+                                <exclude reference="bs9-XP-wLd"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="C9Q-mE-EVo"/>
                                 <include reference="5Lj-di-kcn"/>
+                                <include reference="bs9-XP-wLd"/>
                             </mask>
                         </variation>
                     </view>
@@ -63,6 +75,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n26-kr-Euw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="345" y="173.25"/>
+        </scene>
+        <!--FirstSubViewController-->
+        <scene sceneID="bbp-GD-5sg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="First" referencedIdentifier="FirstSubViewController" id="zEn-kP-LgF" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ea8-yc-qZW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="390" y="242.25"/>
         </scene>
     </scenes>
 </document>
